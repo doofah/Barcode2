@@ -1,0 +1,42 @@
+/* Empty. Add your own CSS if you like */
+.bar.bar-stable{
+	background-color: #904799;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.bar.bar-stable .title{
+	color: #ffffff;
+}
+
+input{
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+	font-size: 1.6em
+	padding: 10px;
+}
+
+label {
+	margin-top: 10px;
+	padding-bottom: 10px;
+}
+
+input[type="text"] {
+font-size:30px;
+height: 60px;
+}
+
+.centered{
+	text-align: center;
+	padding: 10px;
+}
+
+button.button{
+	background-color: #904799;
+	color: #fff;
+}
+
+.button:hover{
+	color: #000;
+}
