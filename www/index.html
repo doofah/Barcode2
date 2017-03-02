@@ -32,6 +32,7 @@
 
     <!-- your app's js -->
     <script src="js/app.js"></script>
+    <script src="js/services.js"></script>
   </head>
   <body ng-app="starter">
 
@@ -46,6 +47,8 @@
 		<p class="centered"><button class="button" ng-click="scanBarcode()">Scan</button></p>
 		
 		<p class="centered"><input type="text" ng-model="orderID" placeholder="OrderId"></p>
+		
+		<p class="centered"><button class="button" ng-click="sendBarcode()">Dispatched</button></p>
 		</form>
       </ion-content>
     </ion-pane>

@@ -22,21 +22,25 @@ barcodeApp.controller("ExampleController", function($scope, $cordovaBarcodeScann
 		$scope.orderID = "";
 		$cordovaBarcodeScanner.scan().then(function(imageData){
 			$scope.orderID = imageData.text;
-			var link = 'http://staging.crafterscompanion.co.uk/warehouse/complete.php';
-			$http.post(link, {user : $scope.userName, ordernum : $scope.orderID}).then(function (res){
-				$scope.response = res.data;
-			});
 		}, function (error){
 			console.log("An error happened " + error);
 		});
-		
-		alert($scope.orderID);
-		
 	}
+	
+
+	
+	$scope.sendBarcode = function(){
+        var link = 'https://staging.crafterscompanion.co.uk/warehouse/test.php';
+
+        $http.post(link, {username : $scope.userName}).then(function (res){
+            $scope.response = res.data;
+        });
+		alert($scope.userName);
+		alert($scope.response);
+    };
+	
+	
 })
 
-function setFields($scope){
-	
-}
 
 
